@@ -4,6 +4,7 @@ const nextConfig = {
     domains: [
       "1000logos.net",
       "platform-lookaside.fbsbx.com",
+      "links.papareact.com",
       "firebasestorage.googleapis.com",
     ],
   }

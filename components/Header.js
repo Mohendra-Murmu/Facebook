@@ -49,9 +49,9 @@ function Header() {
                 <Image
                     onClick={signOut}
                     className="rounded-full cursor-pointer"
-                    src={session.user.image} width="40" height="40" layout='fixed' alt={session.user.firstName} />
+                    src={session.user.image} width="40" height="40" layout='fixed' alt={session.user.name} />
 
-                <p className='font-semibold pr-3 flex-nowrap'>{session.user.name}</p>
+                <p className='hidden md:flex font-semibold pr-3 flex-nowrap'>{session.user.name}</p>
                 <ViewGridIcon className='icon' />
                 <ChatIcon className='icon' />
                 <BellIcon className='icon' />
