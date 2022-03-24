@@ -4,6 +4,7 @@ import { getSession } from "next-auth/react"
 import Login from '../components/Login'
 import Sidebar from '../components/Sidebar'
 import Feed from '../components/Feed'
+import Widgets from '../components/Widgets'
 export default function Home({ session }) {
   if (!session) return <Login />;
   return (
@@ -17,7 +18,7 @@ export default function Home({ session }) {
       {/**Header */}
       <Header />
 
-      <main className='flex'>
+      <main className='flex bg-gray-100'>
 
         {/**Sidebar */}
         <Sidebar />
@@ -25,6 +26,7 @@ export default function Home({ session }) {
         <Feed />
 
         {/**Widgets */}
+        <Widgets />
       </main>
 
     </div>
