@@ -7,30 +7,31 @@ import Feed from '../components/Feed'
 import Widgets from '../components/Widgets'
 export default function Home({ session }) {
   if (!session) return <Login />;
-  return (
-    <div>
-      <Head>
-        <title>Facebook</title>
-        <meta name="description" content="Facebook Connect with friends, family and other people you know. Share photos and videos, send messages and get updates." />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+  if (session)
+    return (
+      <div>
+        <Head>
+          <title>Facebook</title>
+          <meta name="description" content="Facebook Connect with friends, family and other people you know. Share photos and videos, send messages and get updates." />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
 
-      {/**Header */}
-      <Header />
+        {/**Header */}
+        <Header />
 
-      <main className='flex bg-gray-100'>
+        <main className='flex bg-gray-100'>
 
-        {/**Sidebar */}
-        <Sidebar />
-        {/**Feed */}
-        <Feed />
+          {/**Sidebar */}
+          <Sidebar />
+          {/**Feed */}
+          <Feed />
 
-        {/**Widgets */}
-        <Widgets />
-      </main>
+          {/**Widgets */}
+          <Widgets />
+        </main>
 
-    </div>
-  )
+      </div>
+    )
 }
 
 
