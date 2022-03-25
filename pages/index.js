@@ -6,6 +6,7 @@ import Sidebar from '../components/Sidebar'
 import Feed from '../components/Feed'
 import Widgets from '../components/Widgets'
 export default function Home({ session }) {
+  console.log({ session })
   if (!session) return <Login />;
   if (session)
     return (
