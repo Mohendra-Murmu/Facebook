@@ -18,7 +18,7 @@ function Widgets() {
                         />
                     </div>
                     <div>
-                        <p className="text-sm font-semibold">Littlebit Programmer</p>
+                        <p className="text-sm font-semibold">{session.user.name}</p>
                     </div>
                 </li>
                 <ul className="text-gray-500 text-sm">
