@@ -5,7 +5,10 @@ import Login from '../components/Login'
 import Sidebar from '../components/Sidebar'
 import Feed from '../components/Feed'
 import Widgets from '../components/Widgets'
-export default function Home({ session }) {
+import { useSession } from 'next-auth/react'
+export default function Home() {
+
+  const { data: session, status } = useSession();
   console.log({ session })
   if (!session) return <Login />;
   return (

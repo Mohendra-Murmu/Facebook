@@ -11,17 +11,17 @@ const stories = [
         src: "https://links.papareact.com/4u4",
         profile: "https://links.papareact.com/zvy"
     }, {
-        name: "Mahi",
+        name: "1Mahi",
         src: "https://links.papareact.com/zof",
         profile: "https://links.papareact.com/l4v"
     },
     {
-        name: "Bill Gates",
+        name: "Bill 1Gates",
         src: "https://links.papareact.com/4u4",
         profile: "https://links.papareact.com/zvy"
     },
     {
-        name: "Mahi",
+        name: "Mahi1",
         src: "https://links.papareact.com/zof",
         profile: "https://links.papareact.com/l4v"
     },

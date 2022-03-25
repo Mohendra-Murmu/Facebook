@@ -31,7 +31,7 @@ function Post({ name, message, profilepic, postimg, timestamp }) {
             <div className="w-full flex flex-col space-y-2 p-2 px-4 bg-white">
                 <div className="flex items-center justify-between pb-2 border-b border-gray-300 text-gray-500 text-sm">
                     <div className="flex items-center">
-                        <button className="flex items-center">
+                        <div className="flex items-center">
                             <button className="focus:outline-none flex items-center justify-center w-4 h-4 rounded-full text-white">
                                 <HeartIcon className='text-red-700' />
                             </button>
@@ -44,7 +44,7 @@ function Post({ name, message, profilepic, postimg, timestamp }) {
                             <div className="ml-1">
                                 <p>130K</p>
                             </div>
-                        </button>
+                        </div>
                     </div>
                     <div className="flex items-center space-x-2">
                         <button>1.2K Comments</button>
